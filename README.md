@@ -17,4 +17,4 @@ Youtility is now a bin which creates a YouTility directory and Videos or Audios 
 ### Usage
 
 - npm install -g @cbdev74/youtility
-- in terminal, `youtility`, then follow the steps
+- in terminal, type `youtility`, then follow the steps
