@@ -19,4 +19,4 @@ YouTility is now an NPM Package
 ### Usage
 
 - npm install -g @cbdev74/youtility
-- in terminal, type `youtility`, then follow the steps
+- in terminal, type `udl`, then follow the steps
