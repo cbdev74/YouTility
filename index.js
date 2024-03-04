@@ -9,10 +9,22 @@ const videoOrAudio = prompt(
 const videoUrl = prompt("Enter the video URL: ");
 
 if (videoOrAudio === "1")
-  youTility.getVideoOrAudio(videoUrl, "highestvideo", "videoandaudio", "mp4");
+  youTility.getVideoOrAudio(
+    videoUrl,
+    "highestvideo",
+    "videoandaudio",
+    `./${youTility.videoID}`,
+    "mp4"
+  );
 
 if (videoOrAudio === "2")
-  youTility.getVideoOrAudio(videoUrl, "highestaudio", "audioonly", "mp3");
+  youTility.getVideoOrAudio(
+    videoUrl,
+    "highestaudio",
+    "audioonly",
+    `./${youTility.videoID}`,
+    "mp3"
+  );
 
 console.log("Downloading...");
 

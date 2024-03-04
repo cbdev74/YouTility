@@ -1,6 +1,8 @@
 class YouTility {
   fs = require("fs");
   ytdl = require("ytdl-core");
+  path = require("path");
+  os = require("os");
   videoID = Math.random().toString(36).substring(7);
   outputPath = "";
 
@@ -19,8 +21,18 @@ class YouTility {
       });
   }
 
-  getVideoOrAudio(videoUrl, quality, filter, format) {
-    this.outputPath = `./downloads/${this.videoID}.${format}`;
+  getVideoOrAudio(videoUrl, quality, filter, outputPath, format) {
+    const downloadsDir = this.path.join(
+      this.os.homedir(),
+      "YouTilityDownloads"
+    );
+
+    if (!this.fs.existsSync(downloadsDir)) {
+      this.fs.mkdirSync(downloadsDir);
+    }
+
+    this.outputPath = this.path.join(downloadsDir, outputPath + "." + format);
+
     this.download(videoUrl, quality, filter);
   }
 }
