@@ -10,9 +10,11 @@ The user can choose between video or audio.
 
 YouTility is now an NPM Package
 
-### v0.2.0
+### v1.0.0
 
-Youtility is now a bin which creates a YouTility directory and Videos or Audios subdirectories directly in the OS home folder.
+- The user can now give a name to the video/audio in downloading phase.
+- A "YouTility" main folder will be created in the OS home directory.
+- Based on user's input, Audios or Videos subdirectories will be created as well, then the file will be stored here.
 
 ### Usage
 
