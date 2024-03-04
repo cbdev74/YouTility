@@ -8,6 +8,7 @@ const videoOrAudio = prompt(
 );
 const fileUrl = prompt("Enter the file URL: ");
 const fileName = prompt("Enter the file name: ");
+const fileFormat = prompt("Enter the file format: ");
 
 if (videoOrAudio === "1")
   youTility.getVideoOrAudio(
@@ -15,7 +16,7 @@ if (videoOrAudio === "1")
     "highestvideo",
     "videoandaudio",
     `./${fileName}`,
-    "mp4",
+    fileFormat,
     videoOrAudio
   );
 
@@ -25,7 +26,7 @@ if (videoOrAudio === "2")
     "highestaudio",
     "audioonly",
     `./${fileName}`,
-    "mp3",
+    fileFormat,
     videoOrAudio
   );
 
