@@ -10,8 +10,8 @@ class YouTility {
       .on("finish", () => {
         console.log("Video downloaded successfully!");
       })
-      .on("error", () => {
-        console.error("Error downloading video");
+      .on("error", (e) => {
+        console.error("Error downloading video: " + e);
         if (this.fs.existsSync(this.outputPath)) {
           this.fs.unlinkSync(this.outputPath);
           console.log("Corrupted file deleted");

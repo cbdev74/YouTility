@@ -3,13 +3,13 @@
   "version": "0.0.4",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "youtility": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "youtility",
     "build": "index.js"
-  },
-  "bin": {
-    "youtility": "./index.js"
   },
   "author": "cbdev74",
   "license": "ISC",
