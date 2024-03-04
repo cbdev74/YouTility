@@ -6,24 +6,27 @@ const youTility = new YouTility();
 const videoOrAudio = prompt(
   "Do you want to download a video (1) or audio (2)? "
 );
-const videoUrl = prompt("Enter the video URL: ");
+const fileUrl = prompt("Enter the file URL: ");
+const fileName = prompt("Enter the file name: ");
 
 if (videoOrAudio === "1")
   youTility.getVideoOrAudio(
-    videoUrl,
+    fileUrl,
     "highestvideo",
     "videoandaudio",
-    `./${youTility.videoID}`,
-    "mp4"
+    `./${fileName}`,
+    "mp4",
+    videoOrAudio
   );
 
 if (videoOrAudio === "2")
   youTility.getVideoOrAudio(
-    videoUrl,
+    fileUrl,
     "highestaudio",
     "audioonly",
-    `./${youTility.videoID}`,
-    "mp3"
+    `./${fileName}`,
+    "mp3",
+    videoOrAudio
   );
 
 console.log("Downloading...");
