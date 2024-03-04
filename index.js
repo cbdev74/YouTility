@@ -1,4 +1,4 @@
-#! /usr/bin/env node
+#!/usr/bin/env node
 const prompt = require("prompt-sync")();
 const YouTility = require("./YouTility");
 
