@@ -19,7 +19,7 @@ YouTility is now an NPM Package
 ### Prerequisites
 
 - Node v20 or upper
-- <b>For Windows users:</b> add the global npm folder (usually C:\Users\{you}\AppData\Roaming\npm) to the system's PATH.
+- <b>For Windows users:</b> add the global npm folder (usually C:\Users\\{you}\AppData\Roaming\npm) to the system's PATH.
 
 ### Usage
 
