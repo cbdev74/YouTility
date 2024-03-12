@@ -7,8 +7,25 @@ const videoOrAudio = prompt(
   "Do you want to download a video (1) or audio (2)? "
 );
 const fileUrl = prompt("Enter the file URL: ");
-const fileName = prompt("Enter the file name: ");
-const fileFormat = prompt("Enter the file format: ");
+
+if (!fileUrl) {
+  console.log("Please enter a valid URL");
+  return;
+}
+
+let fileName =
+  prompt("Enter the file name (default random): ") ??
+  Math.random().toString(36).substring(7);
+
+fileName === ""
+  ? (fileName = Math.random().toString(36).substring(7))
+  : fileName;
+
+let fileFormat = prompt(
+  `Enter the file format (default ${videoOrAudio === "1" ? "mp4" : "m4a"}): `
+);
+
+videoOrAudio === "1" ? (fileFormat = "mp4") : (fileFormat = "m4a");
 
 if (videoOrAudio === "1")
   youTility.getVideoOrAudio(
