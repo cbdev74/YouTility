@@ -16,6 +16,11 @@ YouTility is now an NPM Package
 - A "YouTility" main folder will be created in the OS home directory.
 - Based on user's input, Audios or Videos subdirectories will be created as well, then the file will be stored here.
 
+### Prerequisites
+
+- Node v20 or upper
+- <b>For Windows users:</b> add the global npm folder (usually C:\Users\{you}\AppData\Roaming\npm) to the system's PATH.
+
 ### Usage
 
 - npm install -g @cbdev74/youtility
